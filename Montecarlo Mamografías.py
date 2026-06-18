@@ -63,7 +63,7 @@ fig, ax = plt.subplots(figsize=(15, 5))
 
 
 # Histograma Total
-ax.hist(As, bins=range(35, 65), edgecolor='black', color='lightpink', 
+ax.hist(As, bins=range(35, 70), edgecolor='black', color='lightpink', 
         align='left', weights=np.ones(len(As)) / len(As))
 ax.set_title('Total Asistentes')
 ax.set_xlabel('Asistentes')
