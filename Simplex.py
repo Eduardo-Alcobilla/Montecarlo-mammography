@@ -77,13 +77,6 @@ ax.annotate("Solución P(sobrecarga)≤2,5%\nθ₁=53, θ₀=10\n"
             bbox=dict(boxstyle="round", fc="#EAF7EA", ec=C_GREEN, lw=1.4),
             arrowprops=dict(arrowstyle="->", color=C_GREEN, lw=1.6))
 
-# Caja naranja - intersección C3 con eje X
-ax.annotate("C3 ∩ X = (68,75; 0)\nz=55 pero viola C2",
-            xy=(68.75, 0), xytext=(62, 5.5),
-            color=C_ORANGE, fontsize=9.5, va="center",
-            bbox=dict(boxstyle="round", fc="white", ec=C_ORANGE, lw=1.2),
-            arrowprops=dict(arrowstyle="-", color=C_ORANGE))
-
 # Etiquetas de vértices (cajas grises, sin flecha)
 box_gray = dict(boxstyle="round", fc="#F2F2F2", ec=GRAY_BOX, lw=0.8)
 ax.text(1.0, 2.0, "(0, 0)\nz=0.00",   fontsize=8.5, color="#333", bbox=box_gray)
@@ -95,8 +88,8 @@ ax.text(58.8, 11.5, "(58, 10)\nz=53.40", fontsize=8.5, color="#333", bbox=box_gr
 # ---------------------------------------------------------------
 ax.set_xlim(0, 80)
 ax.set_ylim(0, 66)
-ax.set_xlabel("θ₁, P(θ₁ = 1) = 0,80", fontsize=12)
-ax.set_ylabel("θ₀, P(θ₀ = 1) = 0,70", fontsize=12)
+ax.set_xlabel("θ₁, P(θ₁) = 0,80", fontsize=12)
+ax.set_ylabel("θ₀, P(θ₀) = 0,70", fontsize=12)
 
 ax.set_title("Región factible del Símplex\n"
              "Óptimo LP (Rojo) vs Solución Segura P(sob) ≤ 2,5% (Verde)",
