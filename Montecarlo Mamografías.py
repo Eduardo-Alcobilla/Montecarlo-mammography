@@ -68,8 +68,7 @@ ax.hist(As, bins=range(35, 65), edgecolor='black', color='lightpink',
 ax.set_title('Total Asistentes')
 ax.set_xlabel('Asistentes')
 ax.set_ylabel('% de simulaciones')
-ax.yaxis.set_major_formatter(PercentFormatter(1))
-ax.margins(y=0.15)          
+ax.yaxis.set_major_formatter(PercentFormatter(1))    
 
 # Líneas de percentil
 ax.axvline(p2_total, color='green', linestyle='--', linewidth=1.5, label=f'P2.5 = {p2_total:.1f}')
